@@ -1,0 +1,222 @@
+td{ border: 1px solid #c7c7c7}
+body {
+	background: #f5f5f5;
+	padding: 0.3rem;
+}
+hr {
+  margin: 0;
+  border: 0;
+}
+
+p, div, span, b {
+	display: inline-block;
+	white-space: normal;
+	padding: 0.5rem;
+	margin: 0.5rem;
+	font-size: 0.9rem;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+	line-height: 0.75rem;
+	text-shadow: 0px 0px 2px rgba(0,0,0,.7);
+	
+	/*do something about empty objects*/
+	/* html escape strings, keys*/
+}
+
+/*body > div.object {
+	display: block;
+}*/
+
+section, article {
+	display: inline-block;
+/*	vertical-align: middle; //doesn't work for inline-block*/
+	background: rgba(0,0,0,0.3);
+	margin: 1px;
+}
+
+body > span, body > p, body > b, body > i, body > article, body > pre { 
+	display: table; 
+	white-space: pre-wrap; 
+	margin: 0.5rem;	
+/*	max-width: 100%; i dont think this does any thing*/
+}
+
+article > * {
+	display: table-cell; 
+/*	display: inline-block; */
+	vertical-align: middle;	
+}
+
+article > pre { margin: 0.5rem; }
+
+body > div.object > section > span.name, article > div.object > section > span.name {
+	font: 3rem "Lobster 1.4", sans-serif;
+	overflow: hidden;
+}
+
+span.orange > p.green, body > div.object > section > span.name + *, article > div.object > section > span.name + * {
+	vertical-align: 0.5rem;
+/*	color: cyan;*/
+}
+
+/*span.name {
+	display: block;
+}*/
+
+/*span.name + p, span.name + div, span.name + span {
+	margin-right: 5rem;
+}*/
+
+span.function {
+	display: block;
+	margin-left: -0.5em;
+}
+
+div.object > div.object|section > div.object|section > * {
+	color: cyan;
+	padding: 0.3rem;
+	font-size: 0.666rem;
+	line-height: 1.25rem;
+}
+
+div.object > div.object > div.object > div.object > * {
+/*	color: cyan;*/
+	padding: 0.2rem;
+	margin: 0.2rem;
+	font-size: 0.50rem;
+	line-height: 1.0rem;
+}
+
+div.object > div.object > div.object > div.object > div.object > * {
+/*	color: cyan;*/
+	padding: 0.1rem;
+	margin: 0.1rem;
+	font-size: 0.25rem;
+	line-height: 0.5rem;
+}
+
+div.object:empty {
+	vertical-align: -10rem;
+	background-color: cyan;
+}
+
+div.array:empty {
+	vertical-align: -10rem;
+	background-color: cyan;
+}
+
+span.name > p.string {
+	margin: 0.1rem;
+/*	font: 5rem "Lobster 1.4", sans-serif;*/
+}
+
+/*span.name + p.string {
+	margin: 0.1rem;
+	font: 5rem "Andale Mono", sans-serif;
+	display: block;
+}*/
+
+pre.string {
+/*	display: inline-block;*/
+	
+	background: #f5f5f5;
+	border: 1px solid #cfcfcf;
+	font-size: 12px;
+
+	padding: 0.5rem;
+	
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+
+.error {
+	background-color: #E03862;
+	font-size: 1.5rem; 
+	text-shadow: 2px 3px 3px rgba(0,0,0,.2);  
+	-webkit-text-stroke: 1px white;
+}
+
+.yellow, .boolean {
+    color: #fef4e9;
+    border: solid 1px #ADA41C;
+    background: #E8DB20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FCEE28), to(#D6CA1E));
+    background: -moz-linear-gradient(top,  #FCEE28,  #D6CA1E);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCEE28', endColorstr='#D6CA1E');
+	text-shadow: 0px 0px 2px rgba(0,0,0,.9)
+}
+
+.orange {
+    color: #fef4e9;
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.black {
+    color: #d7d7d7;
+    border: solid 1px #333;
+    background: #333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+    background: -moz-linear-gradient(top,  #666,  #000);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+}
+.grey {
+    color: #e9e9e9;
+    border: solid 1px #555;
+    background: #6e6e6e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+    background: -moz-linear-gradient(top,  #888,  #575757);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757');
+}
+.white {
+    color: #606060;
+    border: solid 1px #b7b7b7;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+    background: -moz-linear-gradient(top,  #fff,  #ededed);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+.red {
+    color: #faddde;
+    border: solid 1px #980c10;
+    background: #d81b21;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+    background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+}
+.blue {
+    color: #d9eef7;
+    border: solid 1px #0076a3;
+    background: #0095cd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+.green {
+    color: #e8f0de;
+    border: solid 1px #538312;
+    background: #64991e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
+    background: -moz-linear-gradient(top,  #7db72f,  #4e7d0e);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+}
+.rosy {
+    color: #fae7e9;
+    border: solid 1px #b73948;
+    background: #da5867;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f16c7c), to(#bf404f));
+    background: -moz-linear-gradient(top,  #f16c7c,  #bf404f);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f16c7c', endColorstr='#bf404f');
+}
+.pink {
+    color: #feeef5;
+    border: solid 1px #d2729e;
+    background: #f895c2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#feb1d3), to(#f171ab));
+    background: -moz-linear-gradient(top,  #feb1d3,  #f171ab);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#feb1d3', endColorstr='#f171ab');
+}
